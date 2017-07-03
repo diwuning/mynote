@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.h.mynote.news.fragment.RollNewsFragment">
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="新闻 > "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bigCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text=" > "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_subCate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_contentTitle"
+        android:weightSum="4"
+        android:background="@drawable/orange_border_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_column"
+            style="@style/orange_text_style"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="38dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            style="@style/orange_text_style"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="38dp" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:gravity="center"
+            style="@style/orange_text_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="38dp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_newsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    </ListView>
+</LinearLayout>

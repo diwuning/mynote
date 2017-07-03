@@ -143,13 +143,13 @@ public class TuijianActivity extends Activity {
                 break;
             case R.id.tv_jump:
                 Intent intent = new Intent(TuijianActivity.this,MyNewsActivity.class);
-                CateList cateList = new CateList(newsCates);
+                CateList<List<NewsCate>> cateList = new CateList<List<NewsCate>>(newsCates);
                 intent.putExtra("cate",cateList);
                 startActivity(intent);
                 break;
             case R.id.tv_finish:
                 Intent selIntent = new Intent(TuijianActivity.this,MyNewsActivity.class);
-                CateList selCates = new CateList(selCate);
+                CateList<List<NewsCate>> selCates = new CateList<List<NewsCate>>(selCate);
                 selIntent.putExtra("cate",selCates);
                 startActivity(selIntent);
                 break;

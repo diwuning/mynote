@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\project\MyNote\PullToRefresh\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\project\MyNote\PullToRefresh\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\MyNotes\MyNote\PullToRefresh\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\MyNotes\MyNote\PullToRefresh\src\debug\shaders"/></dataSet></merger>

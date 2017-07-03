@@ -15,6 +15,7 @@
             android:layout_width="22dp"
             android:layout_height="22dp" />
         <TextView
+            android:id="@+id/tv_bigTile"
             android:textColor="@color/title_text_color"
             android:textSize="17sp"
             android:text="关注类目"

@@ -8,18 +8,18 @@ import com.h.mynote.greendao.greenBean.NewsCate;
  * Created by wangchm on 2017/6/29 0029.
  */
 
-public class CateList implements Serializable {
-    private List<NewsCate> newsCates;
+public class CateList<T> implements Serializable {
+    private T newsCates;
 
-    public CateList(List<NewsCate> newsCates) {
+    public CateList(T newsCates) {
         this.setNewsCates(newsCates);
     }
 
-    public List<NewsCate> getNewsCates() {
+    public T getNewsCates() {
         return newsCates;
     }
 
-    public void setNewsCates(List<NewsCate> newsCates) {
+    public void setNewsCates(T newsCates) {
         this.newsCates = newsCates;
     }
 }
