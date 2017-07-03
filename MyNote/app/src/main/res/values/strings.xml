@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="pre_task">
+        <item>准时提醒</item>
+        <item>提前15分钟</item>
+        <item>提前30分钟</item>
+        <item>提前1小时</item>
+        <item>提前2小时</item>
+        <item>提前1天</item>
+    </string-array>
+    <string-array name="selector_repeat">
+        <item>只响一次</item>
+        <item>每天</item>
+        <item>周一至周五</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="my_title_bar">
+        <item>重要日子</item>
+        <item>缴费提醒</item>
+        <item>商务提醒</item>
+    </string-array>
+    <array name="alarm_list_group">
+        <item>重要日子</item>
+        <item>缴费提醒</item>
+        <item>商务提醒</item>
+        <item>自定义</item>
+        <item>倒计时</item>
+        <item>祝福语</item>
+        <item>节气</item>
+    </array>
+    <array name="remind_item_list">
+        <item>今天</item>
+        <item>明天</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>其他</item>
+    </array>
+</resources>

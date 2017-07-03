@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    android:gravity="center">
+    <ImageView
+        android:id="@id/id_circle_menu_item_image"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@id/id_circle_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:textColor="#4D5659"
+        android:textSize="14sp"
+        android:text="繁忙生活，点滴精彩，建个提醒不会错过哦~"/>
+
+</LinearLayout>

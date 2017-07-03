@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/haier_textbox_network"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_count_icon"
+            android:src="@drawable/note1"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:id="@+id/ll_count_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_count_icon"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_count_content"
+                android:text="今天是个好日子，咿呀咿呀呀"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_count_hour"
+                    android:text="00"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_count_minute"
+                    android:text="00"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_count_second"
+                    android:text="00"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_count_edit"
+            android:layout_toRightOf="@+id/ll_count_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_count_start"
+                android:src="@drawable/cout_down_start"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/iv_count_pause"
+                android:src="@drawable/cout_down_pause"
+                android:visibility="gone"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/iv_count_del"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/del_icon_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

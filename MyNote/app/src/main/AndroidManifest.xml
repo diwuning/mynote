@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.h.mynote">
+
+    <!-- 外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 保存文件到本地 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络访问 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".remind.ContainFragment" />
+        <activity android:name=".countdown.CountDownDetailActivity" />
+        <activity android:name=".video.SurfaceActivity" />
+        <!-- 音乐列表 -->
+        <activity android:name=".music.MpsPlayerActivity" />
+
+        <service android:name=".music.PlayerService1" />
+        <!-- 视频列表 -->
+        <activity android:name=".video.VideoListActivity" />
+        <!-- 视听推荐 -->
+        <activity android:name=".recommend.RecommendActivity" />
+        <activity android:name=".recommend.book.BookActivity" />
+        <activity android:name=".recommend.movie.MovieSearchActivity" />
+        <activity android:name=".recommend.moviedetail.MovieDetailActivity" />
+        <activity android:name=".recommend.bookdetail.BookDetailActivity" />
+        <activity android:name=".news.MyNewsActivity" />
+        <activity android:name=".news.TuijianActivity" />
+        <activity android:name=".news.fragment.RollNewsFragment"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.h.mynote.news.TuijianActivity">
+    <RelativeLayout
+        android:id="@+id/rl_headCate"
+        android:background="@drawable/white_border_style"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/iv_newsCateBack"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/icon_back_nor"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+        <TextView
+            android:textColor="@color/title_text_color"
+            android:textSize="17sp"
+            android:text="关注类目"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_jump"
+            android:text="跳过"
+            style="@style/title_style"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="请选择您喜欢的新闻"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/gv_tuijian"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:numColumns="4"
+        android:columnWidth="50dp"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:verticalSpacing="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+    <TextView
+        android:id="@+id/tv_finish"
+        android:text="完成"
+        android:background="@drawable/orange_border_style"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+</LinearLayout>

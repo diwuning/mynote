@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.h.mynote.recommend.movie.MovieSearchActivity">
+    <RelativeLayout
+        android:id="@+id/rl_tvHeadSearch"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/iv_tvCancel"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back_nor"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+        <RelativeLayout
+            android:id="@+id/rl_tvSearch"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_toRightOf="@+id/iv_tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="13dp"
+            >
+            <com.h.mynote.common.TextField
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cooksearch_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_edit_bg"
+                android:paddingLeft="@dimen/dp_31"
+                android:paddingRight="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/text_color_middle_gray"
+                android:textSize="@dimen/dp_14"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:hint="根据导演、演员、类别、片名搜索"
+                app:isDelete="true"  />
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:src="@drawable/icon_sousuo_nor"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:background="@color/split_line_color"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_theaters"
+        android:layout_below="@+id/rl_tvHeadSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_13"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_theaters"
+                android:text="正在热映"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <GridView
+                android:id="@+id/gv_theaters"
+                android:numColumns="3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="10dp"
+                android:listSelector="@color/trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tvResult"
+        android:layout_below="@+id/rl_tvHeadSearch"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_tvResult"
+            android:listSelector="@color/trans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

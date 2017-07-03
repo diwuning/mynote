@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="title_key"
+        android:defaultValue="请输入描述文字">
+    </EditTextPreference>
+    <com.h.mynote.view.AlarmPreference
+        android:key="date"
+        android:icon="@drawable/icon_zdy_date"
+        android:persistent="true"
+        android:title="日期">
+    </com.h.mynote.view.AlarmPreference>
+    <com.h.mynote.view.AlarmPreference
+        android:key="time"
+        android:icon="@drawable/icon_zdy_time"
+        android:persistent="true"
+        android:title="时间">
+
+    </com.h.mynote.view.AlarmPreference>
+    <com.h.mynote.view.PreListPreference
+        android:key="premind"
+        android:icon="@drawable/icon_zdy_pre"
+        android:persistent="true"
+        android:title="提前提醒">
+
+    </com.h.mynote.view.PreListPreference>
+    <com.h.mynote.view.PreListPreference
+        android:key="setRepeat"
+        android:icon="@drawable/icon_zdy_repeat"
+        android:persistent="true"
+        android:title="重复">
+
+    </com.h.mynote.view.PreListPreference>
+    <com.h.mynote.view.AlertRingtonePreference
+        android:key="alarm"
+        android:icon="@drawable/icon_zdy_alert"
+        android:persistent="true"
+        android:title="铃声">
+
+    </com.h.mynote.view.AlertRingtonePreference>
+</PreferenceScreen>

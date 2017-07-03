@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_headCate"
+        android:background="@drawable/white_border_style"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/iv_Back"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/icon_back_nor"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+        <TextView
+            android:textColor="@color/title_text_color"
+            android:textSize="17sp"
+            android:text="关注类目"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_jump"
+            android:text="跳过"
+            style="@style/title_style"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

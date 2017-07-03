@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/haier_textbox_network"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt2"
+                android:textColor="@color/text_mak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天是个好日子，咿呀咿呀呀"/>
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李大钊"/>
+
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/del_icon_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/hidetxt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
