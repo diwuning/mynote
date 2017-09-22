@@ -343,5 +343,12 @@ public class MpsPlayerActivity extends Activity {
     public void onDestroy(){
         super.onDestroy();
         unregisterReceiver(receiver);
+        Intent intent = new Intent();
+        intent.setAction("com.h.fileinput.action.MUSIC_SERVICE");
+        intent.putExtra("MSG", AppConstant.PlayerMsg.PAUSE_MSG);
+        intent.setClass(MpsPlayerActivity.this, PlayerService1.class);
+        startService(intent);
+        isPlaying = false;
+        isPause =true;
     }
 }

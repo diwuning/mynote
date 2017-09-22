@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.h.mynote.R;
 import com.h.mynote.greendao.greenBean.NewsCate;
 import com.h.mynote.news.MyNewsActivity;
+import com.h.mynote.news.adpter.NewsListAdapter;
 import com.h.mynote.news.bean.CateList;
 import com.h.mynote.news.bean.NewsItem;
 
@@ -137,8 +138,9 @@ public class RollNewsFragment extends Fragment {
                     tvColumn.setText(contentTitle[0]);
                     tvTitle.setText(contentTitle[1]);
                     tvTime.setText(contentTitle[2]);
-                    List<NewsItem> newsItemList = (List<NewsItem>) msg.getData().getSerializable("items");
-
+                    CateList<List<NewsItem>> newsItemList = (CateList<List<NewsItem>>) msg.getData().getSerializable("items");
+                    NewsListAdapter listAdapter = new NewsListAdapter(newsItemList.getNewsCates(),getActivity());
+                    lvNewsList.setAdapter(listAdapter);
                     break;
             }
         }

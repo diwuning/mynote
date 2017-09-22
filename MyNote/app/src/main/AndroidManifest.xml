@@ -45,7 +45,8 @@
         <activity android:name=".recommend.bookdetail.BookDetailActivity" />
         <activity android:name=".news.MyNewsActivity" />
         <activity android:name=".news.TuijianActivity" />
-        <activity android:name=".news.fragment.RollNewsFragment"></activity>
+        <activity android:name=".news.fragment.RollNewsFragment" />
+        <activity android:name=".news.NewsDetailActivity"></activity>
     </application>
 
 </manifest>
