@@ -89,7 +89,10 @@ public class SurfaceActivity extends Activity implements SurfaceHolder.Callback 
         });
         List<VideoInfo>  videoInfos = MediaUtil.getVideoList(getApplicationContext());
         Toast.makeText(getApplicationContext(),videoInfos.size()+"",Toast.LENGTH_SHORT).show();
-        videoInfo = videoInfos.get(1);
+        if(videoInfos != null && videoInfos.size() != 0){
+            videoInfo = videoInfos.get(0);
+        }
+
 
         //点击播放画面会显示进度条，再点击一次，进度条消失
         rl_videoSeek = (RelativeLayout)findViewById(R.id.rl_videoSeek);
